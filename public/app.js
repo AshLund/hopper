@@ -20,3 +20,13 @@ $("#addbrewery").on("click", function () {
     });
     return false
 })
+
+function allBreweries () {
+    $.getJSON("/name", function(data) {
+        for (var i=0; i<data.length; i++) {
+            $("#results").append("<p class='data-entry' data-id=" + data[i]._id + ">" + data[i].name + "</p>")
+        }
+    })
+}
+
+allBreweries();

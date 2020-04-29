@@ -38,7 +38,27 @@ app.post("/submit", function(req, res) {
       }
     });
   });
+
+  app.get("/all", function (req, res) {
+    db.breweries.find({}, function(error, found) {
+      if (error) {
+        console.log(error);
+      } else {
+        res.send(found);
+      }
+    })
+  })
   
+  app.get("/name", function (req, res) {
+    db.breweries.find().sort({name:1}, function(error, found) {
+      if (error) {
+        console.log(error);
+      } else {
+        res.send(found);
+      }
+    })
+  })
+
 
 app.listen(3300, function() {
   console.log("App running on port 3300!");
