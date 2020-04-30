@@ -14,11 +14,47 @@
            <input type="text" id="name" placeholder="Brewery Name">
         Street Address
            <input type="text" id="address" placeholder="Street Address">
-        Gluten Free?
-           <input type="checkbox" id="gluten">
+         State
+            <input type="text" id="state" placeholder="State">
+         Zip Code
+            <input type="text" id="zip" placeholder="Zip Code">
+         Website
+            <input type="text" id="website" placeholder="Website">
+         Outdoor Seating?
+         <input type="checkbox"  id="seating">
+         Gluen free beer options?
+           <input type="checkbox"  id="gluten">
+         Do they serve food?
+               No Food
+               <input type="checkbox"  id="nofood">
+               Yes, with a kitchen
+               <input type="checkbox" id="kitchen">
+               Yes, but bar snacks only
+               <input type="checkbox" id="snacks">
+         Are there non-beer options? 
+               Wine
+               <input type="checkbox"  id="wine">
+               Cocktails
+               <input type="checkbox"  id="cocktails">
+               Full Bar
+               <input type="checkbox" id="full">
+               NA Drinks
+               <input type="checkbox" id="na">
+         Are dogs allowed?
+            Yes, inside and outside
+            <input type="checkbox"  id="insidedog">
+            Yes, but outside only
+            <input type="checkbox"  id="outsidedog">
+         Is the brewery accessible?
+         <input type="checkbox"  id="accessible">
+
+
        </form>
        <button type="submit" id="addbrewery">Add Brewery </button> 
+       <input type="text" id="brewery-search">
+       <button type="submit" id="search-btn"> Search for a Brewery.</button>
       <div id="results"></div>
+      <div id="brewery"></div>
    </div>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
